@@ -30,6 +30,10 @@ def test_table() -> List[Dict]:
 def index() -> str:
     return json.dumps({'ttable': test_table()})
 
+@app.route('/home')
+def home():
+    return render_template('index.html')
+
 @app.route('/success/<name>')
 def success(name):
     return 'welcome <h1>%s</h1>' % name
