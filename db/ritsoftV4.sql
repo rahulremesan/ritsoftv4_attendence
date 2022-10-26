@@ -27,6 +27,11 @@ SET time_zone = "+00:00";
 -- Table structure for table `mrd_accreditation_assesment_tool`
 --
 
+create database ritsoftV4;
+use ritsoftV4;
+
+
+
 CREATE TABLE `mrd_accreditation_assesment_tool` (
   `tool_id` varchar(30) NOT NULL,
   `class_id` varchar(30) NOT NULL,
