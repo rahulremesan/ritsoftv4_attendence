@@ -32,7 +32,7 @@ def index() -> str:
 
 @app.route('/home')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/success/<name>')
 def success(name):

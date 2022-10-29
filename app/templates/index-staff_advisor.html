@@ -21,7 +21,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   
-
 	
 	<!-- icons -->
 	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -29,6 +28,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+	
+	
 
 
 </head>
@@ -66,6 +67,49 @@
 		  
 		      <span class="">Home </span>
 		  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		   <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <span class="d-none d-md-block dropdown-toggle ps-2">Switch User</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>HOD</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Student Advisor</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-person"></i>
+                <span>Faculty</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li> &nbsp;
 		  
 		  
 		  
@@ -132,7 +176,7 @@
 	 <main id="main" class="main">
 
     <div class="pagetitle" align="center">
-      <h1>Office User</h1>
+      <h1>Staff Advisor</h1>
       
     </div><!-- End Page Title -->
 
@@ -153,40 +197,52 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Candidate Registration
-						&nbsp;<i class="bi bi-pencil-square"></i>
+                      Course Management
+						&nbsp;<i class="bi bi-gear"></i>
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="d-grid gap-2 mt-3">
-                <button class="btn btn-primary" type="button">Candidate Registration</button>
+                <button class="btn btn-primary" type="button">Confirm Course Registration</button>
               </div>
 					      <div class="d-grid gap-2 mt-3">
-                <button class="btn btn-primary" type="button">View / Edit Detials</button>
+                <button class="btn btn-primary" type="button">Assign course batches</button>
               </div>
-					     <div class="d-grid gap-2 mt-3">
-                <button class="btn btn-primary" type="button">View</button>
-              </div>
+				
                   </div>
                 </div>
              <div class="accordion-item">
                <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Transfer Certificate
-						&nbsp;<i class="bi bi-card-heading"></i>
+                    View
+						&nbsp;<i class="bi bi-binoculars"></i>
                  </button>
 				   
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                      <div class="d-grid gap-2 mt-3">
-                <button class="btn btn-primary" type="button">Transfer Certificate</button>
+                <button class="btn btn-primary" type="button">Application View And Comments</button>
               </div>
 					      <div class="d-grid gap-2 mt-3">
-                <button class="btn btn-primary" type="button">TC Generation Special Case</button>
+                <button class="btn btn-primary" type="button">View</button>
               </div>
-					        <div class="d-grid gap-2 mt-3">
-                <button class="btn btn-primary" type="button">Conduct Certificate</button>
+				
+                  </div>
+                </div>
+				  
+				   <div class="accordion-item">
+               <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Issue/Send Notice
+						&nbsp;<i class="bi bi-send"></i>
+                 </button>
+				   
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                     <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-primary" type="button">Issue/Send Notice</button>
               </div>
+			
                   </div>
                 </div>
 				  
@@ -249,7 +305,7 @@
 	
 	
 	  <!-- Vendor JS Files -->
-
+ 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 	
