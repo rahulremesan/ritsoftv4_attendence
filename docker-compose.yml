@@ -5,7 +5,7 @@ services:
     links:
       - db
     ports:
-      - "5000:5000"
+      - "8100:8100"
     volumes:
       - ./app:/app
   db:
@@ -13,6 +13,6 @@ services:
 #    ports:
 #      - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ritsoftv4-pass
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro

@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RitSoft v4</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="..//static/img/favicon.png" rel="icon">
+  <link href="..//static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="..//static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="..//static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+	
+	<!-- icons -->
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	
+
+  <!-- Template Main CSS File -->
+  <link href="..//static/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="..//static/img/v4logo.png" alt="">
+        <span class="d-none d-lg-block">RitSoft v4</span>
+      </a>
+		</div>
+    
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+   
+
+        
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+         
+			
+
+        </li><!-- End Messages Nav -->
+		  
+		  <a class="nav-link nav-profile d-flex align-items-center pe-0" href="home.html" >
+		  
+		      <span class="">Home </span>
+		  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		   <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <span class="d-none d-md-block dropdown-toggle ps-2">Switch User</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>HOD</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Student Advisor</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-person"></i>
+                <span>Faculty</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li> &nbsp;
+		  
+		  
+		  
+		  
+		   <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" >
+		  
+		      <span class="">Contact </span>
+		  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <span class="d-none d-md-block dropdown-toggle ps-2">Profile</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Display name of user here</h6>
+              <span>Office User</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              http://172.19.0.3:8100/l>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+
+  
+  <br><br><br>
+  <div class="row content">
+    <div class="col-md-5">
+      <h3 class="offset-3 col-md-9 ">Update Attendance</h3>
+      <br>
+      <form action="" method="POST" style="margin-left: 15px;">
+      
+        
+        <div class="form-group row">
+         
+           <label for="subject" class="col-md-4 col-form-label">Subject </label>
+          <div class="col-md-8">
+           
+            <select name="subject" id="subject" class="form-control" required>
+              {% for row in s %}
+              <option value="s1:mca">{{row[1]}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="form-group row">
+          
+          <label for="Batch" class="col-md-4 col-form-label">Batch</label>
+          <div class="col-md-8">
+            {% for row in batch %}
+           <input class="checkbox" type="checkbox" id="batchA" name="batchA">
+            <label for="Batch" class="col-md-4 col-form-label">{{row[5]}}</label><br>
+           {% endfor %}
+          </div>
+        </div>
+        <br>
+        <div class="form-group row">
+         
+           <label for="Date" class="col-md-4 col-form-label">Date</label>
+          <div class="col-md-8">
+            
+           <input class="form-control" type="date" id="date" required>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="form-group row">
+          
+          <label for="hour" class="col-md-4 col-form-label">Hour</label>
+          <div class="col-md-8">
+            
+           <input class="checkbox" type="radio" id="1h" name="1hour">
+            <label for="Hour" class="col-md-4 col-form-label">1st Hour</label><br>
+            <input class="checkbox" type="radio" id="2h" name="2hour">
+            <label for="Hour" class="col-md-4 col-form-label">2nd Hour</label><br>
+            <input class="checkbox" type="radio" id="3h" name="3hour">
+            <label for="Hour" class="col-md-4 col-form-label">3rd Hour</label><br>
+            <input class="checkbox" type="radio" id="4h" name="4hour">
+            <label for="Hour" class="col-md-4 col-form-label">4th Hour</label><br>
+            <input class="checkbox" type="radio" id="5h" name="5hour">
+            <label for="Hour" class="col-md-4 col-form-label">5th Hour</label><br>
+            <input class="checkbox" type="radio" id="6h" name="6hour">
+            <label for="Hour" class="col-md-4 col-form-label">6th Hour</label><br>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="form-group row">
+          <div class="offset-2 col-md-3">
+           
+            <input class="form-control btn btn-primary" type="button" id="enter" value="View"> 
+          </div>
+          <div class="col-md-3">
+            
+            <input class="form-control btn btn-secondary" type="reset" id="reset" value="Reset">
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <div class="col-5">
+      <h3 class="offset-4 col-md-8">Class name</h3>
+      <table class="table table-hover" id="shiftTable">
+        <thead>
+          <tr>
+            <th scope="col">Roll.No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">Duty Leave</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- {% for items in data %}
+          <tr>
+            <th scope="row">{{ row[1] }}</th>
+            <td>{{ row[1] }}</td>
+            <td><input type="checkbox" checked value="1"></td>
+            <td><input type="checkbox" uncheked value="0"></td>
+          </tr>
+          {% endfor %} -->
+          <tr>
+          <td>1</td>
+          <td>ABC</td>
+          <td><input type="checkbox" checked></td>
+          <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>DEF</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox" checked></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>GHI</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox" checked></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+
+  
+  <!-- End attendance entry -->
+
+	
+	
+	  <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>RitSoftv4</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <span>MCA(BATCH-2021-2023)</span>
+      
+         <div class="copyright" style="font-size: 1px;opacity: 0">
+        &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits" style="font-size: 1px;opacity: 0">
+        
+        Designed by <a href="">BootstrapMade</a>
+      </div>
+      
+      </div>
+    </footer><!-- End Footer -->
+  
+    
+    
+      <!-- Vendor JS Files -->
+   
+    <script src="..//static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    
+  </body>
+  </html>
