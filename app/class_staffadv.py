@@ -1,0 +1,10 @@
+class Staffadvisor:
+	def course_registration():
+	def course_batches(cid):
+	def application(servicename):
+		def application_view():
+		def application_comment():
+	def view():
+	def notice(notinumber,notidate):
+		def issue_notice():
+		def send_notice():
