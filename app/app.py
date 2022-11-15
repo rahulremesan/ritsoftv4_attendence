@@ -33,6 +33,10 @@ def attendance():
     batch =  c2.fetchall()
     return render_template('att_fact.html',s=s,batch=batch)
 
+@app.route('/att_status_stud')
+def att_status_stud():
+    return render_template('att_status_stud.html')
+
 @app.route('/success/<name>')
 def success(name):
     return 'welcome <h1>%s</h1>' % name
