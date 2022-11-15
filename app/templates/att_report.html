@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RitSoft v4</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="..//static/img/favicon.png" rel="icon">
+  <link href="..//static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="..//static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="..//static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+	
+	<!-- icons -->
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	
+
+  <!-- Template Main CSS File -->
+  <link href="..//static/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="..//static/img/v4logo.png" alt="">
+        <span class="d-none d-lg-block">RitSoft v4</span>
+      </a>
+		</div>
+    
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+   
+
+        
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+         
+			
+
+        </li><!-- End Messages Nav -->
+		  
+		  <a class="nav-link nav-profile d-flex align-items-center pe-0" href="home.html" >
+		  
+		      <span class="">Home </span>
+		  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		   <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <span class="d-none d-md-block dropdown-toggle ps-2">Switch User</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>HOD</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Student Advisor</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-person"></i>
+                <span>Faculty</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li> &nbsp;
+		  
+		  
+		  
+		  
+		   <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" >
+		  
+		      <span class="">Contact </span>
+		  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <span class="d-none d-md-block dropdown-toggle ps-2">Profile</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Display name of user here</h6>
+              <span>Office User</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              http://172.19.0.3:8100/l>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+  <br><br><br>
+
+
+    <form action="{{ url_for('gfg') }}" method="post">
+    <div class="split left">
+    <div class="centeredt">
+       <h1>ATTENDANCE REPORT</h1> 
+       {{student}}
+       <br>
+       <label for="subject" >Class </label>&nbsp &nbsp &nbsp &nbsp &nbsp;
+        <select name="subject" id="subject"  required >
+          <option value="" selected="selected" disabled="disabled">--select class--</option>
+          <option>S1:MCA</option>
+          <option>S2:MCA</option>
+          <option>S3:MCA</option>
+        </select>
+        <br>
+        <br>
+          <div>
+            
+              <label for="Date" >Start Date</label>&nbsp &nbsp &nbsp &nbsp &nbsp;   
+              <input  name="sdate" type="date" id="date" required>
+ 
+           </div>
+           <br>
+           <div>
+             
+               <label for="Date" >End Date</label>&nbsp &nbsp &nbsp &nbsp &nbsp;
+               <input  name="edate" type="date" id="date" required>
+            
+            </div>
+            <br>
+   
+   
+   
+   
+           <div>
+            <br>
+            <br>
+             <div>
+               
+               <input  type="submit" id="enter" value="View">
+             
+   
+           
+               <input type="reset" id="reset" value="Reset">
+             </div>
+   
+   
+           </div>
+           </div>
+           </div>
+         </form>
+       </div>
+   
+
+
+        </select>
+      </div>
+
+
+
+      
+    </div>
+  </div>
+  
+  <div class="split right">
+    <div class="centered">
+        <div class="col-5">
+            <h3>Attendance Report</h3>
+            <table  id="shiftTable" name="a1">
+              <thead>
+                <tr>
+                <th rowspan="2" style="text-align: center;">ROLL NO</th>
+                <th rowspan="2" style="text-align: center;">NAME</th>
+                <th colspan ="7" style="text-align: center;">SUBJECT</th>
+                <th rowspan="2" style="text-align: center;">PERCENTAGE</th>
+                </tr>
+                <tr>
+                  <th>sub1</th>
+                  <th>sub2</th>
+                  <th>sub3</th>
+                  <th>sub4</th>
+                  <th>sub5</th>
+                  <th>sub6</th>
+                  <th>sub7</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>abc</td>
+                  <td>60%</td>
+                  <td>75%</td>
+                  <td>80%</td>
+                  <td>63%</td>
+                  <td>79%</td>
+                  <td>83%</td>
+                  <td>74%</td>
+                  <td>73.4%</td>
+                </tr>
+      
+      
+      
+              </thead>
+      
+    </div>
+  </div> 
+  </form>
+
+	
+	  <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>RitSoftv4</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <span>MCA(BATCH-2021-2023)</span>
+      
+         <div class="copyright" style="font-size: 1px;opacity: 0">
+        &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits" style="font-size: 1px;opacity: 0">
+        
+        Designed by <a href="">BootstrapMade</a>
+      </div>
+      
+      </div>
+    </footer><!-- End Footer -->
+  
+    
+    
+      <!-- Vendor JS Files -->
+   
+    <script src="..//static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    
+  </body>
+  </html>

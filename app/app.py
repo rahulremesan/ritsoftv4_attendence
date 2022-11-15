@@ -37,6 +37,29 @@ def attendance():
 def att_status_stud():
     return render_template('att_status_stud.html')
 
+
+@app.route('/att_entry', methods=["GET", "POST"])
+def gfg():
+   # cursor.execute('SELECT * FROM mrd_department')
+    clss = request.form.get("subject")
+    abc="sdasdm"
+    fde=56
+    hfg=98
+    bfd="smnvs"
+    mnv=90
+    # sdate = request.form.get("sdate")
+    # edate = request.form.get("edate")
+    qry = "select * from mrd_stud_class where registrationstatus = %s"
+    # qr1 = "INSERT INTO mrd_stud_class VALUES (%s,%s,%s,%s,%s,%s)"
+    # c1.execute(qr1, (fde,hfg,bfd,mnv,clss,abc))
+    c2.execute(qry, (clss,))
+    student = c2.fetchall()
+        # c2.execute('SELECT * FROM mrd_course')
+        # cid = c2.fetchall()
+    # c3.execute ('SELECT cname FROM mrd_course WHERE cid='str(cid)'')
+
+    return render_template('att_entry.html', student=student)
+
 @app.route('/success/<name>')
 def success(name):
     return 'welcome <h1>%s</h1>' % name
