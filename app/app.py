@@ -17,7 +17,7 @@ config = {
 connection = mysql.connector.connect(**config)
 c1 = connection.cursor()
 c2 = connection.cursor()
-
+cursor = connection.cursor()
 
 
 @app.route('/')
@@ -36,6 +36,17 @@ def attendance():
 @app.route('/att_status_stud')
 def att_status_stud():
     return render_template('att_status_stud.html')
+
+
+@app.route('/delete')
+def delete():
+
+    #executing query
+    cursor.execute("select * from mrd_prof_course;")
+    #fetching all records from database
+    data=cursor.fetchall()
+    #returning back to projectlist.html with all records from MySQL which are stored in variable data
+    return render_template("att_delete.html",data=data)
 
 
 @app.route('/att_entry', methods=["GET", "POST"])
