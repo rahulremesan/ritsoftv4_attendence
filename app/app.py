@@ -49,8 +49,8 @@ def delete():
     return render_template("att_delete.html",data=data)
 
 
-@app.route('/att_entry', methods=["GET", "POST"])
-def gfg():
+@app.route('/att_report', methods=["GET", "POST"])
+def att_report():
    # cursor.execute('SELECT * FROM mrd_department')
     clss = request.form.get("subject")
     abc="sdasdm"
@@ -69,7 +69,7 @@ def gfg():
         # cid = c2.fetchall()
     # c3.execute ('SELECT cname FROM mrd_course WHERE cid='str(cid)'')
 
-    return render_template('att_entry.html', student=student)
+    return render_template('att_report.html', student=student)
 
 @app.route('/success/<name>')
 def success(name):

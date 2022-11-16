@@ -15,16 +15,18 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="..//static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="..//static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  
-	
-	<!-- icons -->
-	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-	
+
+
+  <!-- icons -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 
   <!-- Template Main CSS File -->
   <link href="..//static/css/style.css" rel="stylesheet">
@@ -33,7 +35,7 @@
 </head>
 
 <body>
-	<!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
@@ -41,40 +43,40 @@
         <img src="..//static/img/v4logo.png" alt="">
         <span class="d-none d-lg-block">RitSoft v4</span>
       </a>
-		</div>
-    
+    </div>
+
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
 
         <li class="nav-item d-block d-lg-none">
-   
 
-        
+
+
 
         </li><!-- End Notification Nav -->
 
         <li class="nav-item dropdown">
 
-         
-			
+
+
 
         </li><!-- End Messages Nav -->
-		  
-		  <a class="nav-link nav-profile d-flex align-items-center pe-0" href="home.html" >
-		  
-		      <span class="">Home </span>
-		  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		  
-		   <li class="nav-item dropdown pe-3">
+
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="home.html">
+
+          <span class="">Home </span>
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-           <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
             <span class="d-none d-md-block dropdown-toggle ps-2">Switch User</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            
+
             <li>
               <hr class="dropdown-divider">
             </li>
@@ -108,19 +110,19 @@
 
           </ul><!-- End Profile Dropdown Items -->
         </li> &nbsp;
-		  
-		  
-		  
-		  
-		   <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" >
-		  
-		      <span class="">Contact </span>
-		  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#">
+
+          <span class="">Contact </span>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-           <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
             <span class="d-none d-md-block dropdown-toggle ps-2">Profile</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -156,19 +158,19 @@
   </header><!-- End Header -->
 
 
-  
+
   <br><br><br>
   <div class="row content">
     <div class="col-md-5">
       <h3 class="offset-3 col-md-9 ">Enter Attendance</h3>
       <form action="" method="POST" style="margin-left: 15px;">
-      
-        
+
+
         <div class="form-group row">
-         
-           <label for="subject" class="col-md-4 col-form-label">Subject </label>
+
+          <label for="subject" class="col-md-4 col-form-label">Subject </label>
           <div class="col-md-8">
-           
+
             <select name="subject" id="subject" class="form-control" required>
               {% for row in s %}
               <option value="s1:mca">{{row[1]}}</option>
@@ -178,31 +180,31 @@
         </div>
 
         <div class="form-group row">
-          
+
           <label for="Batch" class="col-md-4 col-form-label">Batch</label>
           <div class="col-md-8">
             {% for row in batch %}
-           <input class="checkbox" type="checkbox" id="batchA" name="batchA">
+            <input class="checkbox" type="checkbox" id="batchA" name="batchA">
             <label for="Batch" class="col-md-4 col-form-label">{{row[5]}}</label><br>
-           {% endfor %}
+            {% endfor %}
           </div>
         </div>
 
         <div class="form-group row">
-         
-           <label for="Date" class="col-md-4 col-form-label">Date</label>
+
+          <label for="Date" class="col-md-4 col-form-label">Date</label>
           <div class="col-md-8">
-            
-           <input class="form-control" type="date" id="date" required>
+
+            <input class="form-control" type="date" id="date" required>
           </div>
         </div>
 
         <div class="form-group row">
-          
+
           <label for="hour" class="col-md-4 col-form-label">Hour</label>
           <div class="col-md-8">
-            
-           <input class="checkbox" type="radio" id="1h" name="1hour">
+
+            <input class="checkbox" type="radio" id="1h" name="1hour">
             <label for="Hour" class="col-md-4 col-form-label">1st Hour</label><br>
             <input class="checkbox" type="radio" id="2h" name="2hour">
             <label for="Hour" class="col-md-4 col-form-label">2nd Hour</label><br>
@@ -219,11 +221,11 @@
 
         <div class="form-group row">
           <div class="offset-2 col-md-3">
-           
-            <input class="form-control btn btn-primary" type="button" id="enter" value="View"> 
+
+            <input class="form-control btn btn-primary" type="button" id="enter" value="View">
           </div>
           <div class="col-md-3">
-            
+
             <input class="form-control btn btn-secondary" type="reset" id="reset" value="Reset">
           </div>
 
@@ -251,7 +253,7 @@
           </tr>
           {% endfor %}
 
-    
+
         </tbody>
       </table>
     </div>
@@ -259,37 +261,38 @@
   </div>
 
 
-  
+
   <!-- End attendance entry -->
 
-	
-	
-	  <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-      <div class="copyright">
-        &copy; Copyright <strong><span>RitSoftv4</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        
-        Designed by <span>MCA(BATCH-2021-2023)</span>
-      
-         <div class="copyright" style="font-size: 1px;opacity: 0">
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>RitSoftv4</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+
+      Designed by <span>MCA(BATCH-2021-2023)</span>
+
+      <div class="copyright" style="font-size: 1px;opacity: 0">
         &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
       </div>
       <div class="credits" style="font-size: 1px;opacity: 0">
-        
+
         Designed by <a href="">BootstrapMade</a>
       </div>
-      
-      </div>
-    </footer><!-- End Footer -->
-  
-    
-    
-      <!-- Vendor JS Files -->
-   
-    <script src="..//static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-    
-  </body>
-  </html>
+
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  <!-- Vendor JS Files -->
+
+  <script src="..//static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
