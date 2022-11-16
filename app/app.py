@@ -37,6 +37,10 @@ def attendance():
 def att_status_stud():
     return render_template('att_status_stud.html')
 
+@app.route('/att_status_fac')
+def att_status_fac():
+    return render_template('att_status_fac.html')
+
 @app.route('/success/<name>')
 def success(name):
     return 'welcome <h1>%s</h1>' % name

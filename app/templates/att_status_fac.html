@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RitSoft v4</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="..//static/img/favicon.png" rel="icon">
+  <link href="..//static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="..//static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="..//static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+	
+	<!-- icons -->
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	
+
+  <!-- Template Main CSS File -->
+  <link href="..//static/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="..//static/img/v4logo.png" alt="">
+        <span class="d-none d-lg-block">RitSoft v4</span>
+      </a>
+		</div>
+    
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+   
+
+        
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+         
+			
+
+        </li><!-- End Messages Nav -->
+		  
+		  <a class="nav-link nav-profile d-flex align-items-center pe-0" href="home.html" >
+		  
+		      <span class="">Home </span>
+		  </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		   <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <span class="d-none d-md-block dropdown-toggle ps-2">Switch User</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>HOD</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Student Advisor</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-person"></i>
+                <span>Faculty</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li> &nbsp;
+		  
+		  
+		  
+		  
+		   <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" >
+		  
+		      <span class="">Contact </span>
+		  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <!-- <img src="..//static/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
+            <span class="d-none d-md-block dropdown-toggle ps-2">Profile</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Display name of user here</h6>
+              <span>Office User</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              http://172.19.0.3:8100/l>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  
+  <!-- attendance entry -->
+
+  <br><br><br>
+  <div class="row content">
+    <div class="col-md-5">
+      <h3 class="offset-3 col-md-9 ">Attendance Status</h3>
+      <form action="" method="POST">
+        
+        <div class="form-group row">
+           <label for="subject" class="col-md-4 col-form-label">Class </label>
+          <div class="col-md-8">
+            <select name="subject" id="subject" class="form-control" required>
+              <option value="s1:mca">S1:MCA</option>
+              <option value="s2:mca">S2:MCA</option>
+              <option value="s3:mca">S3:MCA</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+        </div>
+
+        <div class="form-group row">
+           <label for="Date" class="col-md-4 col-form-label">From Date</label>
+          <div class="col-md-8">
+           <input class="form-control" type="date" id="fromdate" required>
+          </div>
+          <label for="Date" class="col-md-4 col-form-label">To Date</label>
+          <div class="col-md-8">
+           <input class="form-control" type="date" id="todate" required>
+          </div>
+        </div>
+
+     
+        <div class="form-group row">
+          <div class="offset-2 col-md-3"style="padding-top:30px;>
+            <input class="form-control btn btn-primary" type="button" id="enter" name="attsts" value="Submit" style="color: blue;"> 
+          </div>
+          <div class="col-md-3" style="padding-top:30px;">
+            <input class="form-control btn btn-secondary" type="reset" id="reset" value="Clear" style="color: blue;">
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <table border="1" id="table" cellpadding="3">
+      <tbody>
+      <tr id="days"><th>Day / Hr</th> <th>1</th><th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th></tr>
+      <tr> <th id="day">Mon</th> 
+      <td><button value="nil" id="m1" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="m2" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="m3" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="m4" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="m5" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="m6" class="btn" data-pressed="0" type="button"></button></td> 
+      </tr>
+      <tr> <th id="day">Tue</th> 
+      <td><button id="tu1" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="tu2" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="tu3" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="tu4" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="tu5" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="tu6" class="btn" data-pressed="0" type="button"></button></td> 
+      </tr>
+      <tr> <th id="day">Wed</th> 
+      <td><button id="w1" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="w2" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="w3" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="w4" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="w5" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="w6" class="btn" data-pressed="0" type="button"></button></td> 
+      </tr> 
+      <tr> <th id="day">Thu</th> 
+      <td><button id="th1" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="th2" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="th3" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="th4" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="th5" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="th6" class="btn" data-pressed="0" type="button"></button></td> 
+      </tr> 
+      <tr> <th id="day">Fri</th> 
+      <td><button id="f1" class="btn" data-pressed="0" type="button"></button></td>
+      <td><button id="f2" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="f3" class="btn" data-pressed="0" type="button"></button></td> 
+      <td id="f4">-</td> 
+      <td><button id="f5" class="btn" data-pressed="0" type="button"></button></td> 
+      <td><button id="f6" class="btn" data-pressed="0" type="button"></button></td> 
+      </tr>
+      </tbody>
+      </table>
+      </table>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <!--<script>
+    var table = document.getElementById('shiftTable');
+    for (var i = 1; i < table.rows.length; i++) {
+      table.rows[i].onclick = function () {
+        //rIndex = this.rowIndex;
+        document.getElementById("shiftName").value = this.cells[1].innerHTML;
+        document.getElementById("startTime").value = this.cells[2].innerHTML;
+        document.getElementById("endTime").value = this.cells[3].innerHTML;
+      };
+    }
+  </script>-->
+  <script>
+
+    var program = "MCA";
+    var courseid = "21MCA203";
+    var coursename = "Internet of Things";
+    var scheduleArr=[];
+   
+    var sessionuser;
+    var tableid; // tableid = courseid + profid
+    tableid = "c1p1";
+    var javascript_data;
+   
+    function sendUserinfo()
+    {
+    let userinfo="sample"
+    console.log(userinfo)
+    const request = new XMLHttpRequest()
+    request.open('POST',`/timetable/${JSON.stringify(userinfo)}`)
+    request.send();
+   
+    }
+    // let uname = sessionStorage.getItem("username");
+   
+    var btnids = ["m1","m2","m3","m4","m5","m6","tu1","tu2","tu3","tu4","tu5","tu6","w1","w2","w3","w4","w5","w6","th1","th2","th3","th4","th5","th6","f1","f2","f3","f5","f6"]; 
+    /* const btns = document.getElementsByClassName("btn"); */
+   
+    var edit = false;
+    var changes = false;
+   
+    //View mode
+    function viewmode() 
+    { 
+    //hide buttons
+    {document.getElementById("save").style.display = "none";
+    document.getElementById("clear").style.display = "none";
+    document.getElementById("cancel").style.display = "none";
+    document.getElementById("print").disabled=false;} globalThis;
+    edit = false; 
+    } 
+    // Edit Mode
+   
+    document.getElementById("edit").onclick = function() {editmode()};
+    function editmode() 
+    {
+    edit = true;
+    
+    //Unhide buttons
+    document.getElementById("save").style.display = "inline";
+    document.getElementById("clear").style.display = "inline";
+    document.getElementById("save").disabled=true;
+    document.getElementById("print").disabled=true;
+    
+    for( let i=0; i < btnids.length ; i++)
+    {
+    var x = document.getElementById(btnids[i]).innerText;
+    if (x != "")
+    {
+    document.getElementById(btnids[i]).style.backgroundColor = "rgb(64, 206, 99)";
+    document.getElementById(btnids[i]).innerText = "";
+    document.getElementById(btnids[i]).dataset.pressed = 1;
+    }
+    } 
+    document.getElementById("m1").onclick = function() {setPressed(this)}; 
+    document.getElementById("m2").onclick = function() {setPressed(this)}; 
+    document.getElementById("m3").onclick = function() {setPressed(this)}; 
+    document.getElementById("m4").onclick = function() {setPressed(this)}; 
+    document.getElementById("m5").onclick = function() {setPressed(this)}; 
+    document.getElementById("m6").onclick = function() {setPressed(this)}; 
+    document.getElementById("tu1").onclick = function() {setPressed(this)}; 
+    document.getElementById("tu2").onclick = function() {setPressed(this)}; 
+    document.getElementById("tu3").onclick = function() {setPressed(this)}; 
+    document.getElementById("tu4").onclick = function() {setPressed(this)}; 
+    document.getElementById("tu5").onclick = function() {setPressed(this)}; 
+    document.getElementById("tu6").onclick = function() {setPressed(this)};
+    document.getElementById("w1").onclick = function() {setPressed(this)}; 
+    document.getElementById("w2").onclick = function() {setPressed(this)}; 
+    document.getElementById("w3").onclick = function() {setPressed(this)}; 
+    document.getElementById("w4").onclick = function() {setPressed(this)}; 
+    document.getElementById("w5").onclick = function() {setPressed(this)}; 
+    document.getElementById("w6").onclick = function() {setPressed(this)};
+    document.getElementById("th1").onclick = function() {setPressed(this)}; 
+    document.getElementById("th2").onclick = function() {setPressed(this)}; 
+    document.getElementById("th3").onclick = function() {setPressed(this)}; 
+    document.getElementById("th4").onclick = function() {setPressed(this)}; 
+    document.getElementById("th5").onclick = function() {setPressed(this)}; 
+    document.getElementById("th6").onclick = function() {setPressed(this)};
+    document.getElementById("f1").onclick = function() {setPressed(this)}; 
+    document.getElementById("f2").onclick = function() {setPressed(this)}; 
+    document.getElementById("f3").onclick = function() {setPressed(this)}; 
+    document.getElementById("f5").onclick = function() {setPressed(this)}; 
+    document.getElementById("f6").onclick = function() {setPressed(this)};
+    
+    //set pressed value to 0/1 & change color
+    function setPressed(btn)
+    {
+    if(edit==false) return;
+    document.getElementById("save").disabled = false;
+   
+    if(btn.dataset.pressed == 0)
+    { 
+    btn.style.backgroundColor = "rgb(64, 206, 99)";
+    btn.dataset.pressed = 1;
+    
+    }
+    else
+    {
+    btn.style.backgroundColor = "white";
+    btn.dataset.pressed = 0;
+    btn.innerText="";
+    }
+    }
+    //clear selection
+    document.getElementById("clear").onclick = function() {clearSelection()};
+    function clearSelection()
+    {
+    document.getElementById("save").disabled = false;
+    for (let i=0 ; i < btnids.length ; i++)
+    {
+    document.getElementById(btnids[i]).style.backgroundColor = "white";
+    document.getElementById(btnids[i]).dataset.pressed = 0;
+    document.getElementById(btnids[i]).innerText = "";
+    
+    //retrieving button properties
+    var hvr = document.getElementById(btnids[i]);
+    hvr.classList.remove('btn');
+    hvr.classList.add('btn');
+    document.getElementById(btnids[i]).style.transitionDuration = "0.4s"; 
+    } 
+    }
+    //Save data
+    document.getElementById("save").onclick = function() {saveSelection()};
+    function saveSelection()
+    {
+    for (let i=0 ; i < btnids.length ; i++)
+    { 
+    if (document.getElementById(btnids[i]).dataset.pressed == 1)
+    {
+    document.getElementById(btnids[i]).innerText = coursename;
+    document.getElementById(btnids[i]).style.backgroundColor = "white";
+   
+    if(!scheduleArr.includes(btnids[i]))
+    {
+    scheduleArr.push(btnids[i]);
+    }
+    } 
+    else
+    {
+    if(scheduleArr.includes(btnids[i]))
+    {
+    const start = scheduleArr.indexOf(btnids[i]);
+    const deleteCount = 1;
+    scheduleArr.splice(start,deleteCount); 
+    } 
+    }
+    } 
+    document.getElementById("scheduletext").innerText = scheduleArr;
+   
+    // let today = new Date().toLocaleDateString();
+    // document.getElementById("date").innerText = today;
+    return viewmode();
+   
+    }
+    document.getElementById("cancel").style.display = "inline";
+    document.getElementById("cancel").onclick = function() {saveSelection(),viewmode()};
+    }
+    //Print data
+    document.getElementById("print").onclick = function printData()
+    {
+    for ( let i=0; i<btnids.length; i++)
+    {
+    if (document.getElementById(btnids[i]).dataset.pressed == 0 )
+    {
+    document.getElementById(btnids[i]).style.display = "none";
+    }
+    }
+    var divToPrint=document.getElementById("table");
+    newWin= window.open("");
+    newWin.document.write(divToPrint.outerHTML);
+    newWin.print();
+    newWin.close();
+    for ( let i=0; i<btnids.length; i++)
+    {
+    if (document.getElementById(btnids[i]).dataset.pressed == 0 )
+    {
+    document.getElementById(btnids[i]).style.display = "block";
+    }
+    }
+   
+    }
+   
+    /* $("#print").on('click',function(){
+    printData();
+    }) */
+   
+    </script>
+  
+  <!-- End attendance entry -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>RitSoftv4</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+
+      Designed by <span>MCA(BATCH-2021-2023)</span>
+
+      <div class="copyright" style="font-size: 1px;opacity: 0">
+        &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits" style="font-size: 1px;opacity: 0">
+
+        Designed by <a href="">BootstrapMade</a>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+
+  <script src="..//static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
